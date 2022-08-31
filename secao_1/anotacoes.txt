@@ -1,0 +1,116 @@
+🧑‍💻 O que é SQL ?
+
+SQL significa “Structured Query Language”, ou “Linguagem de Consulta Estruturada”
+
+É uma linguagem para lidar com banco de dados relacional (baseado em tabelas). Foi criado para que vários desenvolvedores pudessem acessar e modificar dados de uma empresa simultaneamente, de maneira descomplicada e unificada. 
+
+🧑‍💻 SQL X MySQL
+
+SQL é a linguagem e MySQL é o SGBD;
+Ou seja, MySQL é um software que gerencia os nosso bancos de
+dados;
+Enquanto SQL é a linguagem que vamos utilizar para manipular e criar
+os bancos
+
+💡SGBDRs (Sistema de Gerenciamento de Banco de Dados Relacionais) oferecem uma interface para acessar o banco de dados utilizando a linguagem SQL, embora com algumas variações.
+
+🪑+🎲 O que é um banco de dado ?
+É onde armazena os dados do nosso sistema.
+Um banco de dados é uma coleção organizada de informações - ou dados - estruturadas, normalmente armazenadas eletronicamente em um sistema de computador
+
+🧑‍💻 Principais elementos de um BD (BANCO DE DADOS)
+
+● Diagrama do Banco: é o projeto do banco, parte fundamental e mais
+avançada, que define o sucesso do projeto;
+● Banco de dados: A entidade que vai guardar todos os elementos do
+banco;
+● Tabelas: A categoria dos dados;
+● Colunas: Tipos de informações que precisamos salvar;
+● Dados: O dado final entregue pelo usuário;
+
+🧑‍💻 Tipos de banco de dados
+
+➡️ Bancos de dados relacionais 🔥
+    Os bancos de dados relacionais se tornaram dominantes na década de 1980. Os itens em um banco de dados relacional são organizados como um conjunto de tabelas com colunas e linhas. A tecnologia de banco de dados relacional fornece a maneira mais eficiente e flexível de acessar informações estruturadas.
+
+➡️ Bancos de dados orientados a objetos
+    As informações em um banco de dados orientado a objetos são representadas na forma de objetos, como na programação orientada a objetos.
+
+➡️ Bancos de dados distribuídos
+    Um banco de dados distribuído consiste em dois ou mais arquivos localizados em sites diferentes. O banco de dados pode ser armazenado em vários computadores, localizados no mesmo local físico ou espalhados por diferentes redes.
+
+➡️ Data warehouses
+    Um repositório central de dados, um data warehouse é um tipo de banco de dados projetado especificamente para consultas e análises rápidas.
+
+➡️ Bancos de dados NoSQL
+    Um NoSQL, ou banco de dados não relacional, permite que dados não estruturados e semiestruturados sejam armazenados e manipulados (em contraste com um banco de dados relacional, que define como todos os dados inseridos no banco de dados devem ser compostos). Os bancos de dados NoSQL se tornaram populares à medida que os aplicativos web se tornaram mais comuns e mais complexos.
+
+➡️ Bancos de dados de grafos
+    Um banco de dados de grafos armazena dados em termos de entidades e os relacionamentos entre entidades.
+    ➨Bancos de dados OLTP. Um banco de dados OLTP é um banco de dados rápido e analítico projetado para um grande número de transações realizadas por vários usuários.
+
+➡️ Bancos de dados de código aberto
+    Um sistema de banco de dados de código aberto é aquele cujo código-fonte é código aberto; esses bancos de dados podem ser bancos de dados SQL ou NoSQL.
+
+➡️ Bancos de dados em nuvem
+    Um banco de dados em nuvem é uma coleção de dados, estruturados ou não estruturados, que residem em uma plataforma de computação em nuvem privada, pública ou híbrida. Existem dois tipos de modelos de banco de dados em nuvem: tradicional e banco de dados como um serviço (DBaaS). Com o DBaaS, as tarefas administrativas e a manutenção são executadas por um provedor de serviços.
+
+➡️ Banco de dados multimodelo
+    Bancos de dados multimodelo combinam diferentes tipos de modelos de banco de dados em um back-end único e integrado. Isso significa que eles podem acomodar vários tipos de dados.
+
+➡️ Banco de dados de documentos/JSON
+    Projetado para armazenar, recuperar e gerenciar informações orientadas a documentos, os bancos de dados de documentos são uma maneira moderna de armazenar dados no formato JSON, em vez de linhas e colunas.
+    
+➡️ Bancos de dados autônomos
+    Os bancos de dados independentes mais novos e inovadores (também conhecidos como bancos de dados autônomos) são baseados em nuvem e usam machine learning para automatizar o ajuste de banco de dados, segurança, backups, atualizações e outras tarefas de gerenciamento de rotina tradicionalmente executadas por administradores de banco de dados.
+
+🧑‍💻 Tipos principais de Dados 🎲
+
+● INT - Números inteiros
+● DOUBLE - Números com ponto flutuante
+● VARCHAR(n) - String com no máximo N caracteres
+● CHAR - String com 1 caractere
+● TEXT - String com quantidade quase ilimitada de caracteres
+● ENUM - Objeto com strings pré-definidas
+● DATE - Representa data (YYYY-MM-DD)
+● DATETIME - Representa data e tempo (YYYY-MM-DD hh:mm:ss)
+
+🧑‍💻 Restrições principais 🎲
+
+● PRIMARY KEY - Chave primária (chave única na tabela)
+● FOREIGN KEY - Chave estrangeira (chave única na tabela)
+● NULL / NOT NULL - Indica se a coluna pode ser ou não pode ser nula
+● UNIQUE - Indica que o valor deve ser único
+● AUTO_INCREMENT - Indica que o valor é auto incrementável
+● DEFAULT - Define um valor padrão caso nenhum valor seja passado
+
+🧑‍💻 Comandos
+
+mysql -u root
+⏩ CREATE DATABASE: Para criar um banco de dados utilizamos a instrução: CREATE
+Sintaxe:
+    DATABASE <nome>
+
+⏩ INSERT: adicionando registros a uma tabela
+O comando INSERT é usado para inserir dados em uma tabela do banco.
+Sintaxe:
+    INSERT into estudantes (id, nome, curso) values (23, 'Rafael', 'Desenvolvimento de Software');
+
+⏩ UPDATE: atualizando os registros já inseridos
+O comando UPDATE é o responsável por fazer edições em registros que já constam no banco. Essa instrução é muito importante já que ela permite corrigir ou complementar os dados, garantindo que o banco tenha sempre informações atualizadas.
+Sintaxe:
+    UPDATE estudantes SET nome = 'Rafael Rodrigues Maia' WHERE id = 23;
+    INSERT into estudantes (id, nome, curso) values (23, 'Rafael', 'Desenvolvimento de Software');
+
+
+🧑‍💻 Sintaxe do SQL
+● A sintaxe é a maneira como escrevemos instruções;
+● Em SQL, por convenção, todas as instruções são em maiúsculos e os
+nomes são em minúsculo (banco, tabela, coluna), ex:
+● Toda instrução deve ser finalizada com um ponto e vírgula;
+
+🧑‍💻 IMPOTAÇÃO DE BANCO DE DADOS
+No terminal 
+selecionar um banco com : USE <nome>
+source<arqivo>
+
