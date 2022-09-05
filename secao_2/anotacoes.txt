@@ -1,0 +1,18 @@
+💎 COMANDOS  💎
+
+➡️ Criando banco de dados 
+
+comando: CREATE DATABASE <name>
+
+➡️ Para ver os bancos de dados criados 
+comando: SHOW DATABASES
+
+➡️ Removendo banco de dados 
+DROP DATABASE <nome>
+    ▶ ️dropar segnifica excluir/apagar/ deletar 
+
+➡️ Exportando banco de dados
+comando no terminal: mysqldump -u root <nome do banco> <nome do arquivo>.sql
+
+➡️ Utilizando o banco de dados 
+USE <nome>
