@@ -63,4 +63,3 @@ data_nascimento DATE
 INSERT INTO aniversarios (nome, data_nascimento) VALUES ("Adriane", "1997-05-20");
 
 SELECT * FROM aniversarios;
-
