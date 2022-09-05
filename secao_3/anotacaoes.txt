@@ -1,0 +1,38 @@
+📈 Tabela
+Entendia responsavel em guardar dados 
+
+Tabelas possuem colunas 
+As colunas são categorias (nome, profissão, idade)
+
+
+➡️ Criando Tabela
+comando: CREATE TABLE <nome> (< coluna> <tipo de dado>)
+
+➡️ Removendo tabela 
+comando: DROP TABLE <nome>
+
+➡️ Inserindo dados em uma tabela
+comando: INSERT INTO <tabela, ... > ( <coluna>) VALUES (<valores>, ...)
+
+
+➡️ Tipos de dados 
+São dividios em texto, numéricos, data e espacial
+
+➡️ Tipo de texto 
+CHAR()
+VARCHAR()
+TINYTEXT
+MEDIUMTEXT
+
+⌛ CHAR E VARCHAR aceitam numeros  caracteres especiais
+
+➡️ Tipos numericos
+BIT (X)
+TINYINT(X)
+BOOL
+INT(X)
+
+➡️ Tipo de data 
+DATE
+DATETIME
+TIMESTAMP
