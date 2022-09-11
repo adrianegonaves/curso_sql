@@ -61,6 +61,28 @@ data_nascimento DATE
 );
 
 INSERT INTO aniversarios (nome, data_nascimento) VALUES ("Adriane", "1997-05-20");
-
+INSERT INTO aniversarios (nome, data_nascimento) VALUES ("Frodo", "2021-10-11");
 SELECT * FROM aniversarios;
 
+CREATE TABLE funcionarios (
+nome VARCHAR (100)
+);
+
+ALTER TABLE funcionarios ADD COLUMN setor VARCHAR (100);
+
+SELECT * FROM funcionarios;
+
+INSERT INTO funcionarios (nome, setor) VALUES ("Adriane", "TI");
+
+ALTER TABLE funcionarios ADD COLUMN cpf CHAR (11);
+
+ALTER TABLE funcionarios ADD COLUMN salario VARCHAR (100);
+
+INSERT INTO funcionarios (nome, setor, cpf, salario) VALUES ("Maria", "RH", "0218498946", "2000");
+
+ALTER TABLE funcionarios DROP COLUMN salario;
+ALTER TABLE funcionarios DROP COLUMN cpf;
+ALTER TABLE funcionarios DROP COLUMN setor;
+ALTER TABLE funcionarios ADD COLUMN data_saida VARCHAR (11);
+
+ALTER TABLE funcionarios MODIFY COLUMN data_saida DATE;
