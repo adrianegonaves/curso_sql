@@ -36,3 +36,14 @@ INT(X)
 DATE
 DATETIME
 TIMESTAMP
+
+➡️ Alterando tabela 
+
+➡️ Adicinar colunas
+ALTER TABLE <tabela> ADD COLUMN <nome> <tipo>;
+
+➡️ Remove colunas
+ALTER TABLE <tabela> DROP COLUMN <nome>;
+
+➡️ Modifica o tipo de coluna
+ALTER TABLE <tabela> MODIFY COLUMN <nome> <tipo>;
