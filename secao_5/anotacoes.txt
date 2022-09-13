@@ -1,0 +1,76 @@
+Avançando em SELECT 
+
+Operadores
+
+Comparação  (>  <  >=  <= = ) filtra dados
+BETWEEN:seleção entre um intervalo
+LIKE: seleção por meio de um padrão
+IN: seleção entre um conjunto de valores específicos 
+
+WHERE
+filtra dados de maneira objetiva
+WHERE id = 10
+
+DISTINCT
+Seleciona apenas variações de valores
+comando: SELECT DISTINCT <coluna> FROM < tabela>
+
+Operadores logicos 
+Pode combinar com WHERE
+
+AND recebe duas condições, so volta resultado que atende as duas.
+Exemplo: WHERE salario > 1000 AND cargo = "programador"
+
+OR  recebe duas condições, so volta resultado que atende pelo menos uma
+Exemplo: WHERE salario > 1000 || cargo = "programador"
+
+NOT inverte um cláusula 
+Exemplo: WHERE NOT profissao = "programador"
+
+Ordenando 
+ORDER BY 
+ASC - ascendente 
+DESC - descendetente 
+
+LIMIT 
+Uma forma de limitar os dados 
+Exemplo: LIMIT 15 
+
+Funções no SQL
+
+Funções são blocos reaproveitados 
+Função MIN  retorna o meno valor de uma coluna específica
+SELECT MIN (<coluna>) FROM <tabela>;
+Função MAX retorna o maior valor
+SELECT MAX (<coluna>) FROM <tabela>;
+
+Obs: o AS renomeia a coluna que vai voltar 
+
+Funçõa COUNT  retorna o numero de valores qu combinam com algun criterio ( quantifica um dado)
+
+SELECT COUNT (*) FROM salaries WHERE salary > 100000;
+
+Função AVG retorna a media de um determinada coluna 
+SELECT AVG (salary) FROM salaries;
+
+Função SUM, retorna a soma de todos o valores de uma coluna 
+SELECT SUM(salary) FROM salaries;
+
+Operador LIKE
+
+é utlizado em conjunto com WHERE 
+Utliza o % que ajuda nas buscas 
+'SELECT * FROM employees WHERE first_name LIKE '%ber%';
+
+Opreador IN
+Busca por um conjunto de valores 
+SELECT * FROM dept_emp WHERE dept_no IN ('d004', 'd005', 'd006');
+
+Operador BETWEEN
+Ele é parecido com o IN, mas ele recebe uma faxia de valores
+SELECT * FROM dept_emp WHERE dept_no BETWEEN 'd001' AND 'd008' ;
+o AND é usado para determinar um intervalo
+
+ALIAS 
+pode servir para renomenar um coluna 
+SELECT SUM(salary) AS soma_salario FROM salaries;
