@@ -1,0 +1,43 @@
+Constraints 
+
+São regras que determinam com os compos serão preenchidos em uma tabela 
+São adicionadas na criação da tabalas (geralmente)
+Organiza e padroniza os projetos 
+
+NOT NULL
+Ela força um valor de uma coluna específica não ser nulo 
+Exemplo: nome VARCHAR (100) NOT NULL
+
+Colando o NULL para inserir em uma tabela indica que é um dado vazio
+
+UNIQUE
+garante que todos os valores de uma coluna são único
+Exemplo: email VARCHAR (100) UNIQUE
+
+PRIMARY KEY 
+Só poder ser adicionada em uma única coluna da tabela, geralmente é o indica
+O valor deve ser único e não pode ser nulo 
+É um identificador único de um registro na tabela 
+
+Exemplo:
+CREATE TABLE produto (
+id INT NOT NULL,
+nome VARCHAR (255),
+sku VARCHAR(255),
+PRIMARY KEY(id)
+);
+
+
+AUTO INCREMENT
+Utilizada para adicionar a quantidade de um em todo registro adicionado 
+Muito usada na coluna id
+
+FOREIGN KEY 
+É uma ligação de uma tabela a outra
+
+INDEX
+Usado para facilitar a consulta de dados 
+Dever ser utilizados em conlunas mais usadas 
+O excesso de indice pode ser prejudicial 
+Removendo index
+DROP INDEX <nome> ON <tabela>
