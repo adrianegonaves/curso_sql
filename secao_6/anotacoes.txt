@@ -36,7 +36,7 @@ FOREIGN KEY
 É uma ligação de uma tabela a outra
 
 INDEX
-facilita a consulta de dados 
+Usado para facilitar a consulta de dados 
 Dever ser utilizados em conlunas mais usadas 
 O excesso de indice pode ser prejudicial 
 Removendo index
