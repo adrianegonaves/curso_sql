@@ -1,0 +1,18 @@
+JOINs
+
+São consultas que envolvem duas ou mais tabelas
+
+Três tipo mais utilizados 
+LEFT JOIN/ LEFT OUTER JOIN
+Retorna todos os dados da tabela da esqueda  os nescessarios da direita
+
+RIGHT JOIN/ RIGHT OUTER JOIN
+Eles trâs as colunas mais a direira
+
+
+JOIN
+
+
+INNER JOIN
+Vai resultar nas colunas que fazem relação entre as tabelas
+Instrução ON
